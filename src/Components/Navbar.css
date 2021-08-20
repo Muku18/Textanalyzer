@@ -1,0 +1,6 @@
+@media only screen and (width: 1000px) {
+    .btn{
+    display : flex;
+    flex-direction: column;
+    }
+}

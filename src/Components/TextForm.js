@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Navbar.css'
 
 
 const TextForm = ( props ) => {
@@ -51,12 +52,15 @@ const TextForm = ( props ) => {
                 <div className="mb-3">
                     <textarea style={{ backgroundColor: props.mode === `dark` ? `grey` : `white` ,color:props.mode === `dark` ? `white` : `black`}} placeholder="Enter your text" className="form-control" value={text} onChange={handleOnchange} id="mybox" rows="8"></textarea>
                 </div>
-                <button className="btn btn-danger " onClick={handleUpClick}> upperCase</button>
-                <button className="btn btn-danger mx-3" onClick={handleLowClick}> lowerCase</button>
-                <button className="btn btn-danger" onClick={handleclearClick}> clearText</button>
-                <button className="btn btn-danger mx-3" onClick={handleCopy}> Copy</button>
-                <button className="btn btn-danger" onClick={handleRemovePunctuation}> removePunctuation</button>
-                <button className="btn btn-danger mx-3" onClick={handleextraSpaces}> removeExtraSpaces</button>
+
+                <div className = "btn">
+                <button className="btn btn-danger mx-3" onClick={handleUpClick}> upperCase</button>
+                <button className="btn btn-danger mx-3 my-3" onClick={handleLowClick}> lowerCase</button>
+                <button className="btn btn-danger mx-3" onClick={handleclearClick}> clearText</button>
+                <button className="btn btn-danger mx-3 my-3" onClick={handleCopy}> Copy</button>
+                <button className="btn btn-danger mx-3" onClick={handleRemovePunctuation}> removePunctuation</button>
+                <button className="btn btn-danger mx-3 my-3" onClick={handleextraSpaces}> removeExtraSpaces</button>
+                </div>
                 
 
             </div>
