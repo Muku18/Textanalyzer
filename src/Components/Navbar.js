@@ -36,10 +36,3 @@ function Navbar(props) {
 }
 
 export default Navbar
-// Navbar.PropTypes = {
-//     title : PropTypes.string.isRequired 
-//  }
-
-//  Navbar.defaultProps = {
-//      title : "Textutils"
-//  }
